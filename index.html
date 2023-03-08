@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <content>
+        <div id="infoBox">
+            <div id="infoLabels">
+                <p>Planet Name:</p>
+                <p>Climate:</p>
+                <p>Terrain:</p>
+                <p>Gravity:</p>
+                <p>Population:</p>
+                <p>Residents:</p>
+            </div>
+            <div id="info">
+                <p class="answers" id="planetName"></p>
+                <p class="answers" id="planetClimate"></p>
+                <p class="answers" id="planetTerrain"></p>
+                <p class="answers" id="planetGravity"></p>
+                <p class="answers" id="planetPopulation"></p>
+                <p class="answers" id="planetResidents"></p>
+                <ul id="residentList">
+
+                </ul>
+            </div>
+        </div>
+        <div id="formBox">
+            <form id="inputForm">
+                Planet ID:
+                <input id="numInput" type="number" placeholder="1-60" min="1" max="60">
+                <button id="getDataButton">Get Data</button>
+            </form>
+        </div>
+    </content>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

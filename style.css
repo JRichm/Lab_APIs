@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+content {
+    display: flex;
+    flex-direction: column;
+}
+
+#infoBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answers {
+    text-align: right;
+}
