@@ -21,10 +21,10 @@ form.addEventListener('submit', (e) => {
 
         for (let i = 0; i < res.data.residents.length; i++) {
             let newResident = document.createElement('li');
-            newResident.textContent = res.data.residents[i];
+            axios.get(res.data.residents[i]).then(result => {
+                newResident.textContent = result.data.name;
+            });
             residentsList.appendChild(newResident);
         }
-
-        console.log(res.data);
-    })
-})
+    })   
+});
